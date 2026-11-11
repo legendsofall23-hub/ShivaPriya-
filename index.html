@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +7,14 @@
   <meta name="theme-color" content="#38251f">
   <title>For Ayya 💖 | A Little World of Memories</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <script src="script.js" defer></script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -37,7 +38,6 @@
 
   <!-- NAVIGATION -->
   <header class="site-header">
-
     <a href="#home" class="brand">
       For Ayya <span>♡</span>
     </a>
@@ -48,14 +48,12 @@
       <a href="#letters">Open When</a>
       <a href="#quiz">Quiz</a>
     </nav>
-
   </header>
 
   <main id="home">
 
     <!-- HERO -->
     <section class="hero section">
-
       <p class="eyebrow">A SPECIAL LITTLE PLACE</p>
 
       <h1>
@@ -74,16 +72,13 @@
       <div class="hero-decoration">
         ✦ &nbsp; ♡ &nbsp; ✦
       </div>
-
     </section>
 
     <!-- LETTER -->
     <section class="section letter-section" id="letter">
-
       <p class="eyebrow">A LETTER FROM ME TO YOU</p>
 
       <div class="paper-card">
-
         <span class="paper-stamp">♡</span>
 
         <h2>My Ayya 💖🫶</h2>
@@ -112,70 +107,66 @@
         <p class="signature">
           Always, your friend ♡
         </p>
-
       </div>
-
     </section>
 
-    <!-- SEVEN PHOTOS -->
+    <!-- MEMORY BOOK -->
     <section class="section scrapbook-section" id="memories">
-
       <p class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</p>
 
       <h2>Our Memory Book 📸</h2>
 
       <p class="section-intro">
-        Seven little spaces for moments worth keeping.
+        Eight little spaces for moments worth keeping.
       </p>
 
       <div class="photo-grid">
 
-
         <figure>
-          <img src="assets/%20photos/memory-01.jpg.jpeg" alt="Memory 1">
+          <img src="./Asset/memory-01.jpg.jpeg" alt="Memory 1" loading="lazy">
           <figcaption>Memory No. 01</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-02.jpg.jpeg" alt="Memory 2">
+          <img src="./Asset/memory-02.jpg.jpeg" alt="Memory 2" loading="lazy">
           <figcaption>Memory No. 02</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-03.jpg.jpeg" alt="Memory 3">
+          <img src="./Asset/memory-03.jpg.jpeg" alt="Memory 3" loading="lazy">
           <figcaption>Memory No. 03</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-04.jpg.jpeg" alt="Memory 4">
+          <img src="./Asset/memory-04.jpg.jpeg" alt="Memory 4" loading="lazy">
           <figcaption>Memory No. 04</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-05.jpg.jpeg" alt="Memory 5">
+          <img src="./Asset/memory-05.jpg.jpeg" alt="Memory 5" loading="lazy">
           <figcaption>Memory No. 05</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-06.jpg.jpeg" alt="Memory 6">
+          <img src="./Asset/memory-06.jpg.jpeg" alt="Memory 6" loading="lazy">
           <figcaption>Memory No. 06</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-07.jpg.jpeg" alt="Memory 7">
+          <img src="./Asset/memory-07.jpg.jpeg" alt="Memory 7" loading="lazy">
           <figcaption>Memory No. 07</figcaption>
         </figure>
 
         <figure>
-          <img src="assets/%20photos/memory-08.jpg.jpeg" alt="Memory 8">
+          <img src="./Asset/memory-08.jpg.jpeg" alt="Memory 8" loading="lazy">
           <figcaption>Memory No. 08</figcaption>
         </figure>
 
+      </div>
     </section>
 
     <!-- OPEN WHEN -->
     <section class="section open-when-section" id="letters">
-
       <p class="eyebrow">FOR EVERY KIND OF DAY</p>
 
       <h2>Open When... 💌</h2>
@@ -234,12 +225,10 @@
         </details>
 
       </div>
-
     </section>
 
     <!-- QUIZ -->
     <section class="section quiz-section" id="quiz">
-
       <p class="eyebrow">LET'S SEE HOW WELL YOU KNOW US</p>
 
       <h2>The Ayya Quiz 🎀</h2>
@@ -272,7 +261,6 @@
         </button>
 
         <div id="quizResult" hidden>
-
           <h3>Your result 💖</h3>
 
           <p id="resultText"></p>
@@ -280,16 +268,13 @@
           <button class="primary-btn" id="replayQuiz">
             Play again ↻
           </button>
-
         </div>
 
       </div>
-
     </section>
 
     <!-- PHOTO BOOTH -->
     <section class="section booth-section" id="photobooth">
-
       <p class="eyebrow">A LITTLE SPACE FOR NEW MEMORIES</p>
 
       <h2>Our Photo Booth 📷</h2>
@@ -300,7 +285,13 @@
 
       <label class="upload-btn">
         Add a photo +
-        <input type="file" id="photoUpload" accept="image/*" multiple hidden>
+        <input
+          type="file"
+          id="photoUpload"
+          accept="image/*"
+          multiple
+          hidden
+        >
       </label>
 
       <div id="boothGallery" class="booth-gallery"></div>
@@ -308,12 +299,10 @@
       <p class="small-note">
         Photos added here stay in this browser on this device.
       </p>
-
     </section>
 
     <!-- SECRET PASSWORD -->
     <section class="section secret-section" id="secret">
-
       <p class="eyebrow">A LITTLE SECRET</p>
 
       <h2>A Secret for Ayya 🔐</h2>
@@ -339,7 +328,6 @@
         <p id="secretFeedback" aria-live="polite"></p>
 
         <div id="secretMessage" hidden>
-
           <h3>You found it! 😂💖</h3>
 
           <p>
@@ -347,16 +335,13 @@
             and a reason to smile. You're one of those people to me,
             Ayya. ♾️
           </p>
-
         </div>
 
       </div>
-
     </section>
 
     <!-- FINAL SURPRISE -->
     <section class="section final-section" id="final">
-
       <p class="eyebrow">ONE LAST SECRET</p>
 
       <h2>One Last Surprise 💌</h2>
@@ -372,7 +357,6 @@
         </button>
 
         <div id="finalMessage" hidden>
-
           <h3>My special Ayya 💖</h3>
 
           <p>
@@ -386,21 +370,17 @@
             Whatever happens, we've got each other.
             Ayya 💖♾️
           </p>
-
         </div>
 
       </div>
-
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-
     <p>Made with care, memories and lots of love for Ayya 💖</p>
-
     <p>A little world just for you ♡</p>
-
   </footer>
 
 </body>
